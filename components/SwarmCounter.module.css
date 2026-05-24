@@ -1,0 +1,29 @@
+.widget {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  background: var(--black);
+  color: var(--cream);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 50;
+  font-family: var(--font-mono);
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+.text { display: flex; flex-direction: column; }
+.live  { font-size: 11px; font-weight: 700; }
+.sub   { font-size: 9px; color: rgba(245, 240, 232, 0.45); }

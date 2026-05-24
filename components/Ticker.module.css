@@ -1,0 +1,22 @@
+.bar {
+  background: #0d0d0d;
+  color: #f5f0e8;
+  height: 36px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker 35s linear infinite;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

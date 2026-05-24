@@ -1,0 +1,110 @@
+.hero {
+  background: var(--black);
+  color: var(--cream);
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.heroLabel { font-size: 10px; letter-spacing: 0.22em; color: rgba(245,240,232,.4); margin-bottom: 16px; }
+.heroTitle  { font-family: var(--font-serif); font-size: clamp(48px, 7vw, 96px); font-weight: 900; line-height: 1; }
+.heroSub    { font-size: 14px; color: rgba(245,240,232,.55); margin-top: 16px; }
+
+.searchSection { border-bottom: 1.5px solid var(--black); }
+.searchInner { max-width: 800px; margin: 0 auto; padding: 60px 24px 80px; }
+
+.searchForm { margin-bottom: 40px; }
+.inputWrap {
+  display: flex;
+  border: 2px solid var(--black);
+  background: #fff;
+}
+.searchInput {
+  flex: 1;
+  border: none;
+  padding: 18px 20px;
+  font-size: 15px;
+  font-family: var(--font-mono);
+  outline: none;
+  background: transparent;
+}
+.searchBtn {
+  width: 60px;
+  background: var(--black);
+  color: var(--cream);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.searchBtn:hover:not(:disabled) { background: var(--orange); }
+.searchBtn:disabled { opacity: 0.5; }
+.searchHint { font-size: 11px; color: var(--mid-gray); margin-top: 10px; }
+
+.errorMsg {
+  background: #fef2f2;
+  border: 1.5px solid #dc2626;
+  color: #991b1b;
+  padding: 14px 18px;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.resultsWrap { margin-top: 16px; }
+.resultsHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px solid var(--black);
+  margin-bottom: 24px;
+}
+.resultsCount {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 900;
+}
+.resultsQuery { font-size: 13px; color: var(--mid-gray); }
+
+.noResults { text-align: center; padding: 48px 0; }
+.noResultsIcon { font-size: 48px; margin-bottom: 16px; }
+.noResults h3 { font-family: var(--font-serif); font-size: 22px; margin-bottom: 8px; }
+.noResults p { font-size: 13px; color: var(--mid-gray); }
+
+.resultsGrid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
+.memberCard {
+  border: 1.5px solid var(--black);
+  padding: 24px 28px;
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.memberCard:hover { box-shadow: 4px 6px 0 var(--black); transform: translate(-2px, -2px); }
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.verifiedBadge {
+  background: var(--green);
+  color: #fff;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  padding: 4px 10px;
+  font-weight: 700;
+}
+.cardNumber {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--orange);
+}
+.cardName {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.cardLocation { font-size: 13px; color: var(--mid-gray); margin-bottom: 4px; }
+.cardDate { font-size: 11px; color: var(--mid-gray); }
