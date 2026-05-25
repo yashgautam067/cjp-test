@@ -1,8 +1,9 @@
 # ── Stage 1: Install dependencies ──
 FROM node:20-alpine AS deps
 WORKDIR /app
+RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json ./
-RUN npm ci --omit=dev
+RUN npm ci
 
 # ── Stage 2: Build the Next.js app ──
 FROM node:20-alpine AS builder
